@@ -1,0 +1,10 @@
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+.header { 
+    height: 60px;
+    width: 100%;
+    background-color: blueviolet;
+}
