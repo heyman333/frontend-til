@@ -1,10 +1,168 @@
+
 body { 
     margin: 0;
     padding: 0;
 }
 
+div[class*="Desc"] {
+  max-width: 550px;
+}
+
 .header { 
+    display: flex;
     height: 60px;
-    width: 100%;
-    background-color: blueviolet;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.menus { 
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu {
+    margin: 0 15px;
+}
+
+.section { 
+    display: flex;
+    padding: 30px;
+}
+
+.section1 { 
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+
+.sectionD1 { 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sction1Title { 
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sction1Desc { 
+    text-align: center;
+}
+
+.sectionD2 { 
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sction2Title { 
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.sction2Desc { 
+    text-align: right;
+}
+
+.sectionD3-card1 { 
+    display: flex;
+    flex-direction: column;
+    border-right: 1px gray solid;
+    padding-right: 16px;
+}
+
+.sectionD3-card2 { 
+    display: flex;
+    flex-direction: column;
+}
+
+.sction3Title { 
+    margin-bottom: 40px;
+}
+
+.sectionD4 {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sction4Title { 
+    text-align: center;
+}
+
+.sction4Desc { 
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sectionD5 {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sction5Title { 
+    text-align: center;
+}
+
+.sction5Desc { 
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imgs { 
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.imgs img {
+    margin: 8px;
+}
+
+.section6 { 
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.sction6Desc { 
+    text-align: center;
+}
+
+.bottom { 
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-menus { 
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.bottom-menu {
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    padding: 4px;
+}
+
+.bottom-menu:last-child {
+    border-right: none
 }
