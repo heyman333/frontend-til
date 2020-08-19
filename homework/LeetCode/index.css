@@ -166,3 +166,10 @@ div[class*="Desc"] {
 .bottom-menu:last-child {
     border-right: none
 }
+
+.imageContainer { 
+    display: flex;
+    flex:1;
+    justify-content: center;
+
+}
