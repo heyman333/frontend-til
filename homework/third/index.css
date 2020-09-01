@@ -14,13 +14,35 @@ body {
 @media only screen and (max-width: 530px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 5px;
-    padding: 5px;
   }
 }
 
 
-
 .card { 
-  background-color:skyblue;
+  display: flex;
+  background-color: #1987ed;
+  border-radius: 13px;
+  flex-direction: column;
+}
+
+.card .title { 
+  display: flex;
+  padding: 10px 13px 0px;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.card .title-title { 
+  color: white;
+  font-weight: 600;
+  
+}
+
+.title .title-badge {
+  color: white;
+  font-weight: 600;
+  background-color: #fea115;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 3px 4px
 }
