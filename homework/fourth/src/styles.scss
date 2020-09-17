@@ -35,12 +35,12 @@ main {
     flex-direction: column;
     padding-top: 40px;
 
-    h1 {
+    h2 {
       font-size: 39px;
       font-weight: 700;
     }
 
-    h3 {
+    p {
       font-size: 25px;
       text-align: center;
       font-weight: 300;
@@ -50,7 +50,7 @@ main {
     }
 
     img {
-      width: 800px;
+      width: 60%;
       height: auto;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -63,7 +63,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    h1 {
+    h2 {
       font-size: 39px;
       font-weight: 700;
       margin-bottom: 20px;
@@ -72,7 +72,7 @@ main {
     .grid-card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 192px 192px;
+      grid-template-rows: repeat(2, 192px);
       gap: 21px 23px;
 
       .card {
@@ -88,7 +88,7 @@ main {
           font-weight: 800;
         }
 
-        h5 {
+        p {
           font-size: 14px;
         }
 
@@ -171,5 +171,194 @@ main {
       text-decoration: underline;
       cursor: pointer;
     }
+  }
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  padding: 51px 200px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 500; 
+  }
+
+  .desc {
+    font-size: 17px;
+    font-weight: 300;
+    width: 45%;
+    margin-top: 25px;
+  }
+
+  .title-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0 40px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+
+  .title-card {
+    text-align: left;
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    
+    .card-list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      max-width: 300px;
+    }
+    
+    .card {
+      width: 50px;
+      height: 45px;
+      background-color: gray;
+    }
+
+    .video-text {
+      color: #0070C9;
+      font-size: 17px;
+      margin-top: 13px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .desc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+    margin-top: 30px;
+
+    .desc-card {
+      text-align: left;
+      h3 {
+        margin-bottom: 20px;
+      }
+  
+      h4 {
+        font-size: 17px;
+        font-weight: 300;
+      }
+  
+      .video-text {
+        color: #0070C9;
+        font-size: 17px;
+        margin-top: 13px;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }   
+  }
+}
+
+
+.truetype {
+  padding: 51px 200px;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 17px;
+    font-weight: 300;
+    width: 55%;
+    margin-top: 25px;
+  }
+
+  .blue-title {
+    color: #0070C9;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+
+    }
+  }
+}
+
+.terms {
+  padding: 30px 40px;
+
+  h6 {
+    color: #515154;
+    font-size: 13px;
+
+    em {
+      color: #0070C9;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .termsist-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttons {
+    margin-bottom: 13px;
+
+    button {
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: transparent;
+  
+      &:first-child {
+        font-size: larger;
+      }
+    }
+  }
+
+  .termsist-list {
+    display: flex;
+    .list {
+      display: flex;
+      flex-direction: column;
+
+      h6 {
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &:first-child {
+          color: black;
+          font-size: 14px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid gray;
   }
 }
